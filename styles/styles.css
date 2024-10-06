@@ -19,10 +19,12 @@ img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    
 }
 
 p {
     padding: 0px;
+    overflow: hidden;
 }
 
 main {
@@ -41,12 +43,15 @@ aside {
 
 aside img {
     width: 200px;
+    margin-top: 20px;
     height: auto;
+
 }
 
 main img {
     width: 150px;
     height: auto;
+    clear: right;
 }
 
 footer {
