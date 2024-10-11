@@ -36,7 +36,11 @@ h1{
 
 header{
     display:grid;
-    
+    grid-template-columns: auto 1fr;
+    background-color: #BEA5CA;
+    padding: 20px;
+    align-items: center;
+
     
 }
 
@@ -60,12 +64,16 @@ h2 {
 .adventure-images img{
     width: 100%;
 }
+.head_nav{
+    display: flex;
+}
 
 .head_nav a{
     text-decoration: none;
     font-family: var(--normal-text-font);
     font-size: 15px;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .footer{
