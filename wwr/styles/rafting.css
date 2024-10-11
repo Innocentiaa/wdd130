@@ -32,23 +32,24 @@ h1{
     top: 60px;
     width: 100%;
     text-align: center;
+    padding: 5px;
 }
 
 header{
     display:grid;
-    grid-template-columns: auto 1fr;
-    background-color: #BEA5CA;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #2f4f4f;
     padding: 20px;
     align-items: center;
+}
 
     
-}
 
 article{
     position: absolute;
     top: 2vw;
     padding: 1rem;
-    background-color: #E5DFA6;
+    background-color: #2f4f4f;
     margin: 5rem;
 }
 #happy_clients{
@@ -58,24 +59,27 @@ article{
 
 h2 {
     font-family: var(--heading-font-family);
-    color: #BEA5CA;
+    color: #2f4f4f;
 }
 
 .adventure-images img{
     width: 100%;
 }
-.head_nav{
+.head-nav{
     display: flex;
 }
 
-.head_nav a{
+.head-nav a{
     text-decoration: none;
     font-family: var(--normal-text-font);
     font-size: 15px;
     padding-left: 1rem;
     padding-right: 1rem;
+    color: #E5DFA6;
 }
 
-.footer{
+footer{
+    border-top: 2px;
+    margin-bottom: 20px;
     text-align: center;
 }
