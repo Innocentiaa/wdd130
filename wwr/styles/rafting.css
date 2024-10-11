@@ -34,6 +34,12 @@ h1{
     text-align: center;
 }
 
+header{
+    display:grid;
+    
+    
+}
+
 article{
     position: absolute;
     top: 2vw;
