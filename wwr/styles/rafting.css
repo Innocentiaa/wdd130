@@ -76,6 +76,11 @@ h2 {
     color: #2f4f4f;
 }
 
+h3{
+    color: #E5DFA6;
+    text-transform: capitalize;
+    font-size: 2vw;
+}
 .adventure-images img{
     width: 100%;
 }

@@ -15,15 +15,21 @@ p{
     font-size: 0.9rem;
 }
 
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .logo{
     grid-column: 2;
 }
 
 h1{
-    color: var(--accent1-color);
     font-family: var(--heading-font-family);
-    text-align: center;
-    padding: 5px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
 
 .head-nav{

@@ -25,7 +25,8 @@
 
         <main>         
             <section class="contact-info">
-                <h2>Get in Touch with Centia Whitewater Rafting</h2><br>
+                <h1>CONTACT CENTIA WHITEWATER RAFTING</h1><br>
+                <h2>Get in Touch with us</h2><br>
                 <p>Share your suggestions, your compliments, ask a question or pass along your tips for improving our website.</p> 
                 <p>We'd love to hear from you! Reach us via the following contact details or fill out the form below.</p><br>
                 <ul>
@@ -34,7 +35,7 @@
                     <li>Email: contact@centiarafting.com</li>
                 </ul>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7942.754150907542!2d7.026975669994701!3d5.510913675070235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259980202a4a1%3A0x2b97fd8924660eb1!2sOwerri%2C%20Imo!5e0!3m2!1sen!2sng!4v1729165506057!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7942.754150907542!2d7.026975669994701!3d5.510913675070235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104259980202a4a1%3A0x2b97fd8924660eb1!2sOwerri%2C%20Imo!5e0!3m2!1sen!2sng!4v1729165506057!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
 
@@ -67,13 +68,24 @@
                     <input type="email" id="useremail" name="useremail" required><br>
 
                     <p>What would you like to do today? Please select one of the options below for more information or send us a message.</p>
-                    <label><input type="radio" name="purpose" value="General inquiry?" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="Reservation"> Reservation</label>
-                    <label><input type="radio" name="purpose" value="Website Suggestion">Website Suggestion </label><br>
-                   
+                    <label for="general-inquiry">
+                        <input type="radio" id="general-inquiry" name="purpose" value="General inquiry?" required>General Inquiry
+                    </label>
+
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="Reservation">Reservation
+                    </label>
+
+                    <label for="website-suggestion">
+                        <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">Website Suggestion
+                    </label><br>
+
+
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" required></textarea><br>
-                    <label><input type="checkbox" name="newsletter">Please subscribe me to the monthly newsletter</label><br><br>
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">Please subscribe me to the monthly newsletter
+                    </label><br><br>
                     <button type="submit">Send Message</button>
                 </form>
             </section>
