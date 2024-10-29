@@ -1,7 +1,10 @@
 *{
+    
     margin: 0;
     padding: 0;
 }
+
+.container
 :root {
     --heading-font-family:"Raleway";
     --normal-text-font: "Merriweather";
@@ -19,6 +22,10 @@
     font-style: normal;
   }
 
+  body{
+    font-size: 16px;
+  }
+  
 p{
     font-family: var(--normal-text-font);
     font-size: 0.9rem;
@@ -32,7 +39,9 @@ p{
 
 .hero{
     position: relative;
+    overflow: hidden;
 }
+
 .hero img{
     display: block;
     width: 100%;
@@ -43,12 +52,30 @@ h1{
     position: absolute;
     color: #E5DFA6;
     font-family: var(--heading-font-family);
-    top: 60px;
-    width: 100%;
-    text-align:right;
+    top: 15%;
+    left: 10%;
+    width: 50%;
+    text-align:unset;
     padding: 5px;
 }
+.book {
+    position: absolute;
+    font-family: var(--heading-font-family);
+    padding:90px ;
+    text-align: unset;
+    left:10% ;
+    width:50% ;
+    top: 20px;
+}
+.book a{
+    color: #E5DFA6;
+}
+h5{
+    position: absolute;
+    color: #E5DFA6;
+   
 
+}
 h2 {
     font-family: var(--heading-font-family);
     color: #2f4f4f;
@@ -68,14 +95,17 @@ h4{
 }
 header{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr) ;
     background-color: #2f4f4f;
     padding: 20px;
     align-items: center;
     color: var(--accent1-color);
+    box-sizing: border-box;
+    width: 100%;
 }
 
 map{
+    box-sizing: border-box;
     margin: 20px auto;
     width: 100%;
     max-width: 1200px;
@@ -88,6 +118,7 @@ article{
     padding: 1rem;
     background-color: #2f4f4f;
     margin: 5rem;
+    
 }
 .company-info{
     color: #E5DFA6;
@@ -97,13 +128,66 @@ article{
     float: right;
 }
 
-.adventure-images img{
-    width: 100%;
+.newsletter-signup{
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
 }
-.head-nav{
+
+.newsletter-signup form{
     display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.call-to-action{
+    background-color: var(--accent1-color);
+    text-align: start;
+    border-radius: 8px;
 
 }
+
+.call-to-action cta-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent2-color);
+    color: white;
+    text-decoration: none;
+}
+
+.about-site .purpose, .about-site.offerings{
+    
+    background-color: var(--accent1-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+
+.about-site .home-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    margin-top: 2px;
+    text-align: center;
+    border-radius: 8px;
+}
+.img1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 3vw;
+    width: 30%;
+    max-height: 50%;
+}
+
+.img2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 3vw;
+    width: 100%;
+    max-height: fit-content;
+}
+
 
 .head-nav a{
     text-decoration: none;
@@ -117,11 +201,15 @@ article{
     margin: 0 10px;
 }
 
+
+
 nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
+    padding:5px;
+    }
+
 
 form{
     display: flex;
@@ -183,6 +271,12 @@ font button{
     height: 150px;
     border-radius: 50%;
 }
+.wireframe{
+    color: #2e2c17;
+    text-align: center;
+    background-color: #E5DFA6;
+    
+}
 
 footer{
     display: flex;
@@ -213,11 +307,13 @@ footer a img{
 
 }
 
+
 .company-history{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 20px;
+    box-sizing: border-box;
 }
 
 .item1{
@@ -237,7 +333,8 @@ footer a img{
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
-
+    width:auto
+    
 }
 
 .item4{
@@ -247,11 +344,19 @@ footer a img{
 
 }
 
+
 .adventure-images{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2%;
     margin-top: 3rem;
+    box-sizing: border-box;
+
+}
+
+.adventure-images img{
+    width: 100%;
+
 }
 
 .adventure1{
@@ -301,4 +406,77 @@ figcaption{
 
 form{
     width: 100%;
+}
+
+
+    .trips-listing{
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.trips-listing p{
+    font-size:2vw ;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.trip{
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+}
+
+.trip img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.trip p{
+    margin: 0.9rem;
+}
+
+.trip1{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.trip2{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.trip3{
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.trips-table{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+  /*  border: 1px solid #333;*/
+}
+
+th, td{
+    padding: 10px;
+    border: 1px solid #333;
+
+}
+
+tr{
+    border-bottom: 1px solid #333;
 }
