@@ -61,9 +61,9 @@ h1{
 .book {
     position: absolute;
     font-family: var(--heading-font-family);
-    padding:100px ;
+    padding:130px ;
     text-align: unset;
-    left:10% ;
+    left:30% ;
     width:50% ;
     top: 20px;
 }
